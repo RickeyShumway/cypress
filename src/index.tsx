@@ -2,7 +2,8 @@ import React from 'react';
 import { Router } from 'react-router';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Default, Red, Blue, Green} from './components/colors'
+import {Default, Red, Blue, Green } from './components/colors'
+import {Input } from './components/input'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Default />}/>
         <Route path="red" element={<Red />}/>
+        <Route path="red/:input" element={<Input />}/>
         <Route path="green" element={<Green />}/>
         <Route path="blue" element={<Blue />}/>
       </Routes>
